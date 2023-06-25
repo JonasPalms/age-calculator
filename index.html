@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <div class="input-fields">
+          <label>
+            day
+            <input
+              type="number"
+              name="day"
+              id="day"
+              required
+              placeholder="DD"
+              max="31"
+              min="1"
+              maxlength="2"
+            />
+          </label>
+          <label>
+            month
+            <input
+              type="number"
+              name="month"
+              id="month"
+              required
+              placeholder="MM"
+              max="12"
+              min="1"
+              maxlength="2"
+            />
+          </label>
+          <label>
+            year
+            <input
+              type="number"
+              name="year"
+              id="year"
+              required
+              placeholder="YYYY"
+              max="2023"
+              min="1900"
+              maxlength="4"
+            />
+          </label>
+        </div>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="3">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </form>
+      <div class="footer">
+        <div class="time-block">
+          <span class="time" id="years">--</span> years
+        </div>
+        <div class="time-block">
+          <span class="time" id="months">--</span> months
+        </div>
+        <div class="time-block">
+          <span class="time" id="days">--</span> days
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

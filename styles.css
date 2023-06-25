@@ -1,0 +1,107 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,700;1,800&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--off-white);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 3rem;
+  margin-inline: 1rem;
+  border-radius: 1rem 1rem 25%; 1rem;
+}
+
+form {
+  padding-bottom: 3rem;
+  position: relative;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.input-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--smokey-grey);
+  max-inline-size: 7rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  outline: 1px solid var(--light-grey);
+  caret-color: var(--purple);
+  border: none;
+}
+
+input:focus {
+  outline: 1px solid var(--purple);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  left: 50%;
+  bottom: 0;
+  background-color: var(--purple);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+button:focus {
+  outline-color: var(--off-black);
+}
+
+button > svg {
+  width: 1.8rem;
+  height: auto;
+}
+
+.footer {
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 110%;;
+  font-style: italic;
+}
+
+.time {
+  color: var(--purple);
+}
